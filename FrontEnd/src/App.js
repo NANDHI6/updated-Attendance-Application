@@ -33,9 +33,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./navbar/navbar";
 import "./navbar/navbar.css";
 
-import Sidebar from "./Sidebar/Sidebar"; // Import Sidebar component
-import "./Sidebar/sidebar.css";
-import Content from "./component/content";
+// import Sidebar from "./Sidebar/Sidebar"; // Import Sidebar component
+// import "./Sidebar/sidebar.css";
+// import Content from "./component/content";
+// import Table from "./component/table";
 import Main from "./Pages/main";
 
 function App() {
