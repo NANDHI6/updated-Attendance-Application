@@ -17,14 +17,19 @@ const Table = () => {
 
   return (
     <div>
-      <h2>User Login Information</h2>
+      <h2>
+        <u>User Login Information</u>
+      </h2>
+      <br></br>
       <table border="1">
         <thead>
           <tr>
             <th>ID</th>
             <th>User ID</th>
-            <th>Time Activity</th>
+            <th>Date</th>
+            <th>Time</th>
             <th>Activity Type</th>
+            <th>Comments</th>
           </tr>
         </thead>
         <tbody>
@@ -32,7 +37,8 @@ const Table = () => {
             <tr key={index}>
               <td>{log.id}</td>
               <td>{log.Userid}</td>
-              <td>{log.Time_activity}</td>
+              <td>{log.Date}</td>
+              <td>{log.Time}</td>
               <td>{log.Activity_type}</td>
             </tr>
           ))}

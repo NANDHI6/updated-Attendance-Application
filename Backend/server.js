@@ -24,7 +24,7 @@ db.connect(function (error) {
 
 server.post("/attendance1", (req, res) => {
   // const { Time_activity } = req.body;
-  const { Time_activity } = req.body;
+  const { Date } = req.body;
   const { Userid } = req.body;
   const { Activity_type } = req.body;
 
@@ -32,8 +32,8 @@ server.post("/attendance1", (req, res) => {
 
   // Insert the data into the database
   const sql =
-    "INSERT INTO time_table (Time_activity, Userid, Activity_type) VALUES (?, ? ,?)"; // Assuming your table has a column named Login_Time
-  db.query(sql, [Time_activity, Userid, Activity_type], (err, result) => {
+    "INSERT INTO time_table (Date, Userid, Activity_type) VALUES (?, ? ,?)"; // Assuming your table has a column named Login_Time
+  db.query(sql, [Date, Userid, Activity_type], (err, result) => {
     if (err) {
       console.error("Error inserting data:", err);
       res.status(500).send("Error inserting data into database");
