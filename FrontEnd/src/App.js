@@ -38,6 +38,7 @@ import "./navbar/navbar.css";
 // import Content from "./component/content";
 // import Table from "./component/table";
 import Main from "./Pages/main";
+// import Footer from "./footer/footer";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />}></Route>
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

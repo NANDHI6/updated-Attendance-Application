@@ -1,3 +1,16 @@
 button{
     padding:30px;
 }
+/* .con{
+    width: 10%;
+    height: 80%;
+} */
+
+.con{
+    position: absolute;
+    left: 300px;
+    bottom: 200px;
+    height: 200px;
+    width:300px;
+   
+}
